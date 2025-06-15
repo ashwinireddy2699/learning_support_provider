@@ -1,13 +1,13 @@
 
 import './App.css';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import { ProviderContext } from './context/provider';
-import Providers_details from './pages/providers_details';
-import Providers_list from './pages/providers_list';
+import { ProviderContextProvider } from './context/ProviderContextProvider';
+import Providers_details from './pages/ProvidersDetails';
+import Providers_list from './pages/ProvidersList';
 
 function App() {
   return (
-   <ProviderContext>
+   <ProviderContextProvider>
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Providers_list/>}/>
@@ -15,7 +15,7 @@ function App() {
     </Routes>
     </BrowserRouter>
 
-   </ProviderContext>
+   </ProviderContextProvider>
   );
 }
 

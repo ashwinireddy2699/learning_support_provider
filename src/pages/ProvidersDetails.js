@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { data, useParams } from 'react-router-dom'
-import { fetch_providers_by_id } from '../api/providers_fetch'
+import { fetch_providers_by_id } from '../api/ProvidersFetch'
 import styles from '../styles/Providers_details.module.css'
 import  providerPic from '../assests/learnbox.png'
 

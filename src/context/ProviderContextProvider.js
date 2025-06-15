@@ -1,9 +1,9 @@
-import { Children, useEffect, useState } from "react";
-import { fetchproviders } from "../api/providers_fetch";
-import { provider_Context } from "./provider_context";
+import {  useEffect, useState } from "react";
+import { fetchproviders } from "../api/ProvidersFetch";
+import { ProviderContext } from "./ProviderContext";
 
 
-export const ProviderContext = ({ children }) => {
+export const ProviderContextProvider  = ({ children }) => {
     const [providers, setProviders] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -18,10 +18,10 @@ export const ProviderContext = ({ children }) => {
     }, [])
 
     return (
-        <provider_Context.Provider value={{ providers, loading }}>
+        <ProviderContext.Provider value={{ providers, loading }}>
             {children}
 
-        </provider_Context.Provider>
+        </ProviderContext.Provider>
 
     )
 

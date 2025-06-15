@@ -1,14 +1,14 @@
 import React from 'react'
 import { useState, useContext } from 'react'
-import { provider_Context } from '../context/provider_context'
-import Searchbar from '../components/searchbar'
+import { ProviderContext } from '../context/ProviderContext'
+import Searchbar from '../components/Searchbar'
 import styles from '../styles/Providers_list.module.css'
-import Provider_card from '../components/provider_card'
+import Provider_card from '../components/ProviderCard'
 import banner from '../assests/learnbox.png'
 
 
 function Providers_list() {
-    const { providers, loading } = useContext(provider_Context)
+    const { providers, loading } = useContext(ProviderContext)
     const [search, setSearchTerm] = useState("");
     const filterProviders = search ? providers.filter((p) => {
         return (

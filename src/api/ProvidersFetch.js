@@ -1,4 +1,4 @@
-import providers from '../data/provoders_data.json'
+import providers from '../data/ProvodersData.json'
 
 
 export function fetchproviders(){
