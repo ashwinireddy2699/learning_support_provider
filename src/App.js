@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import { ProviderContext } from './context/provider';
+import Providers_details from './pages/providers_details';
+import Providers_list from './pages/providers_list';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <ProviderContext>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Providers_list/>}/>
+      <Route path="provider/:id" element={<Providers_details/>}/>
+    </Routes>
+    </BrowserRouter>
+
+   </ProviderContext>
   );
 }
 

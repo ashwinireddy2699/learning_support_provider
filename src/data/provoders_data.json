@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "name": "Bright Minds Center",
+    "specialization": "Dyslexia Support",
+    "location": "Bangalore",
+    "rating": 4.5,
+    "shortDescription": "Helping children overcome reading challenges.",
+    "longDescription": "Bright Minds Center specializes in providing structured literacy programs for children with dyslexia. Our trained specialists use evidence-based approaches.",
+    "contactEmail": "contact@brightminds.com",
+    "phoneNumber": "9876543210"
+  },
+  {
+    "id": "2",
+    "name": "Focus First",
+    "specialization": "ADHD Coaching",
+    "location": "Hyderabad",
+    "rating": 4.7,
+    "shortDescription": "Empowering students to manage attention and focus.",
+    "longDescription": "Focus First offers one-on-one ADHD coaching for school and college students, with a focus on goal setting, time management, and emotional support.",
+    "contactEmail": "info@focusfirst.in",
+    "phoneNumber": "9123456789"
+  },
+  {
+    "id": "3",
+    "name": "Learning Ladder",
+    "specialization": "Autism Support",
+    "location": "Chennai",
+    "rating": 4.3,
+    "shortDescription": "Individualized learning for children on the autism spectrum.",
+    "longDescription": "Learning Ladder provides sensory-friendly classrooms, visual learning aids, and behavior therapy sessions to support children with autism.",
+    "contactEmail": "support@learningladder.org",
+    "phoneNumber": "9988776655"
+  },
+  {
+    "id": "4",
+    "name": "Path to Progress",
+    "specialization": "General Learning Support",
+    "location": "Delhi",
+    "rating": 4.2,
+    "shortDescription": "Customized tutoring for students with diverse learning needs.",
+    "longDescription": "Path to Progress works with children who face learning delays or academic difficulties, offering tailored programs for math, reading, and writing.",
+    "contactEmail": "path@progress.com",
+    "phoneNumber": "9871234567"
+  },
+  {
+    "id": "5",
+    "name": "Step Ahead Academy",
+    "specialization": "Speech and Language Therapy",
+    "location": "Mumbai",
+    "rating": 4.6,
+    "shortDescription": "Building communication skills for all learners.",
+    "longDescription": "Our licensed speech therapists work with children and young adults to develop speech clarity, language comprehension, and social communication.",
+    "contactEmail": "hello@stepahead.com",
+    "phoneNumber": "9812345678"
+  }
+]

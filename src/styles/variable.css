@@ -1,0 +1,42 @@
+:root{
+    /*colors*/
+    --color-primary:#2c7be5;
+    --color-secondary: #6c757d;
+    --color-bg:#f5f7fa;
+    --color-white:#ffffff;
+    --color-dark: #343a40;
+    --color-border:#e0e0e0;
+
+    /*Typography*/
+    --font-base:'Segoe UI', sans-serif;
+    --font-size-base:0.875rem;
+    --font-size-sm: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.5rem;
+
+    /*spacing*/
+
+    --space-xs: 0.5rem;
+    --space-sm: 1 rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+
+    /* Border radius */
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 10px;
+
+    /*shadow*/
+
+   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+   --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+   /*responsive breakpoints*/
+
+   --screen-sm:576px;
+   --screen-md: 768px;
+   --screen-lg: 922px;
+   --screen-xl:1200px
+}
