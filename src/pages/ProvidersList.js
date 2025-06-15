@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useContext } from 'react'
 import { ProviderContext } from '../context/ProviderContext'
-import Searchbar from '../components/Searchbar'
+import Searchbar from '../components/searchbar'
 import styles from '../styles/Providers_list.module.css'
 import Provider_card from '../components/ProviderCard'
 import banner from '../assests/learnbox.png'
