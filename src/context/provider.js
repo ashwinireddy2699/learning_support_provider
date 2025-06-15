@@ -5,11 +5,14 @@ import { provider_Context } from "./provider_context";
 
 export const ProviderContext = ({ children }) => {
     const [providers, setProviders] = useState([]);
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         fetchproviders().then((data) => {
+            console.log(data)
             setProviders(data)
+            setLoading(false)
+        }).catch((error)=>{
             setLoading(false)
         })
     }, [])
