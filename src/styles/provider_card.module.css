@@ -1,0 +1,47 @@
+.providerCard {
+  display: block;
+  text-decoration: none;
+  background-color: var(--color-white);
+  border-radius: 1rem; /* Rounded square */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 250px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: inherit;
+}
+
+.providerCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.CardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.specialization {
+  font-size: 1rem;
+  color: var(--color-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.location {
+  font-size: 0.95rem;
+  color: var(--color-dark);
+  margin-bottom: 0.3rem;
+}
+
+.rating {
+  font-size: 0.9rem;
+  color: goldenrod;
+  font-weight: 600;
+}

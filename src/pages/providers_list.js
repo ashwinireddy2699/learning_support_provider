@@ -4,6 +4,7 @@ import { provider_Context } from '../context/provider_context'
 import Searchbar from '../components/searchbar'
 import styles from '../styles/Providers_list.module.css'
 import Provider_card from '../components/provider_card'
+import banner from '../assests/learnbox.png'
 
 
 function Providers_list() {
@@ -19,18 +20,27 @@ function Providers_list() {
     }) : providers;
 
     if (loading) {
-        return <p>Loading providers...</p>;
+        return <div className={styles.loading_container}>
+            <div className={styles.spinner}></div>
+            <p className={styles.loading_text}>Loading providers...</p>
+        </div>
+
     }
 
     return (
-        <div >
-            <Searchbar search={search} setSearchTerm={setSearchTerm} />
+        <div className={styles.Conatainer}>
+            <div className={styles.header}><p>Learning providers</p></div>
+            <div className={styles.banner} style={{ backgroundImage: `url(${banner})` }}>
+                <h1>Discover the learning support providers</h1>
+                <Searchbar search={search} setSearchTerm={setSearchTerm} />
+            </div>
+
             {filterProviders.length > 0 ?
-                <div>
+                <div className={styles.providersContainer}>
                     {filterProviders.map((provider) => (
                         <Provider_card key={provider.id} providers={provider} />
                     ))}
-                </div> : (<p>Providers not found</p>)}
+                </div> : (<p className={styles.notFound}>No providers match your search.</p>)}
 
         </div>
     )

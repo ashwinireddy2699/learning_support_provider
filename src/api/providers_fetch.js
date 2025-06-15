@@ -15,6 +15,7 @@ export function fetch_providers_by_id(id){
         setTimeout(() => {
             const provider=providers.find(p=>p.id===id);
             if(provider){
+                console.log(provider)
                 resolve(provider)
             }else{
                 reject(new Error('provider not found'))

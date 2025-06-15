@@ -1,0 +1,130 @@
+.detailContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  background-color: var(--color-bg, #f5f7fa);
+  min-height: 90vh;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-white, #ffffff);
+  border-radius: 1rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 1000px;
+  width: 100%;
+  padding: 2rem;
+  gap: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.image {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+  flex-shrink: 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1;
+  font-family: var(--font-base, sans-serif);
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary, #1e88e5);
+}
+
+.specialization {
+  font-size: 1.25rem;
+  color: var(--color-secondary, #6c757d);
+  font-weight: 500;
+}
+
+.shortDescription,
+.description,
+.phoneNumber,
+.location {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.phoneNumber,
+.location {
+  font-weight: 500;
+  color: #333;
+}
+
+.loading_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  font-family: sans-serif;
+}
+
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+.loading_text {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .image {
+    width: 220px;
+    height: 220px;
+  }
+
+  .info {
+    align-items: center;
+    text-align: center;
+  }
+
+  .name {
+    font-size: 1.8rem;
+  }
+
+  .specialization {
+    font-size: 1.1rem;
+  }
+}
